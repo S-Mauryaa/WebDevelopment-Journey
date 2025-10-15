@@ -1,0 +1,19 @@
+<html>
+    <script>
+        function addTodo(){
+            const Title = document.getElementById("Title").value;
+            const Description = document.getElementById("Description").value;
+        //   document.getElementById("container").
+            const outerDiv = document.createElement("div");
+            outerDiv.innerHTML = title;
+            document.getElementById("container").appendChild(outerDiv);        
+    }
+    </script>
+    <body>
+        <input id="Title" type="text" placeholder="Title"> <br> </br>
+        <input id="Description" type="text" placeholder="Description"><br> </br>
+        <button onclick="addTodo()">Add todo</button>
+        <div id="container">
+        </div>
+    </body>
+</html>

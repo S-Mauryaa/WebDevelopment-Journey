@@ -1,0 +1,34 @@
+<html>
+<script>
+ function polpulateDiv(){
+    const a = document.getElementById("firstNumber").value;
+    const b = document.getElementById("secondNumber").value;
+    const element = document.getElementById("Final Sum")
+    element.innerHTML = parseInt(a) + parseInt(b);
+ }
+</script>
+<style>
+    .Main{
+        background-color: red;
+        margin: 130;
+        padding: 2;
+    }
+    #style{
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <div class="Main">
+        Hi there
+    </div> 
+    <div id="style">
+        Hi there
+    </div>
+    <br>
+    <input id="firstNumber" type="text" placeholder="First Number"> <br> <br>
+    <input id="secondNumber" type="text" placeholder="Second Number"><br><br>
+<button onclick="polpulateDiv()">Calculate Sum</button> <br> <br>
+<div id="Final Sum">
+</div>
+</body>
+</html>
